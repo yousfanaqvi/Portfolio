@@ -1,0 +1,102 @@
+.contact-container{
+    margin: 4rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    height: 100%;
+    width: 100vw;
+    align-items: center;
+    margin-top: 2rem;
+    padding-bottom: 5rem;
+    margin-bottom: -1rem;
+
+}
+
+.form-container{
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    padding: 5rem;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+.contact-info{
+    object-fit: cover;
+    background-position: center center;
+    gap: 1rem;
+    background-size: cover;
+    background-image: url("./assets/square.jpg");
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    padding-top: 2rem;
+    letter-spacing: 1px;
+    text-align: left;
+    flex: 1;
+
+}
+
+.email-call{
+    color: #EAEAEA;
+    cursor: pointer;
+}
+.contact-icon{
+    width: 34px;
+    height: 34px;
+    background-color: rgb(0, 255, 255,0.5);
+    border-radius: 50%;
+    padding: 5px;
+    animation: flash 1s infinite ease-in-out;
+}
+
+@keyframes flash {
+    from{
+        background-color: rgb(0, 255, 255,0.5);
+
+    }
+    to{
+        background-color:rgb(234, 234, 234,0.5);
+
+    }
+}
+form 
+{
+    padding: 1rem;
+    flex: 2;
+    background-color:#EAEAEA;
+}
+
+.form-textfield{
+    margin: 1rem;
+
+}
+
+.background{
+  object-fit: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-size:cover;
+  height: 100%;
+  width: 100vw;
+  z-index: -2;
+  background-image: url("./assets/bg.png");
+   
+}
+
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    width: 100vw;
+    margin-top: 8rem;
+}
+
+@media screen and (max-width:767px){
+    .form-container{
+        flex-direction: column;
+        width: max-content;
+    }
+}

@@ -1,0 +1,126 @@
+
+.wrapper{
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    margin-top: 1rem;
+
+}
+.marquee-group{
+    flex-shrink: 0;
+    display: flex;
+    min-width: 100%;
+    animation: marquee 40s linear infinite;
+    justify-content:space-around;
+    background-color: 249,245,241;
+    margin-top: 1rem;
+}
+
+@keyframes marquee {
+    0%   { transform: translateX(0%); }
+    100% { transform: translateX(-100%) }
+  }
+ 
+.skill-img{
+    width: 50px;
+    height: 50px;
+    transition: width, height;
+    filter: grayscale(100%);
+
+    
+}
+.img-div{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    margin: 0.2rem;
+    position: relative;
+    border-radius: 20%;
+    padding: 5px;
+    text-align: center;
+    background-color: #fff;
+    
+}
+.img-div>h6{
+    letter-spacing:1.5px;
+    padding-top: 1rem;
+    color: #000;
+}
+.skill-img:hover{
+    width: 70px;
+    height: 70px;
+    margin-top: 1.5rem;
+    filter: none;
+  -webkit-filter: grayscale(0%);
+    
+}
+
+#about-me{
+    display: grid;
+    grid-template-columns: 380px 380px;
+    gap: 0.8rem;
+    text-align: justify;
+    justify-content: center;
+    padding: 2rem;
+    padding-bottom: 4rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    font-size: 20px; 
+    
+}
+#about-me>p{
+    text-align: left;
+    letter-spacing: 1px;
+    padding:1rem;
+    font-weight: 400;
+    height: max-content;
+    line-height: 1.8rem;
+}
+
+.tools-text{
+    font-weight: 600;
+    padding-top: 3rem;
+    letter-spacing: 2px;
+}
+.highlight-text{
+    background: linear-gradient(90deg, #8ec0b9 50%, #d14dd1 100%); 
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:767px){
+
+    #skills{
+    display: flex;
+    flex-direction: column;
+}
+
+#about-me{
+    grid-template-columns: 1fr;
+    margin: 0px;
+    padding: 12px;
+
+}
+.heading{
+    margin-left: 1.5rem;
+}
+#aboutme-pic{
+    margin: 1rem;
+}
+.tools-text{
+    margin-left: 1.5rem;
+}
+}

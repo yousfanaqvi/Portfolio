@@ -1,0 +1,13 @@
+.Loader-container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color:#000 ;
+}
+.logo{
+    height: 200px;
+    width: 200px;
+}

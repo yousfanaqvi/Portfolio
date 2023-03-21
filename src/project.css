@@ -1,0 +1,118 @@
+
+.projects-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 4rem;
+    margin-top: 0;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+.project-thumbnail{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.img-container{
+    padding: 7rem 1rem;
+    background: linear-gradient(90deg, #aaddd5 0%, #e0afe0 50%);
+    border-radius: 10px;
+    height:100%;
+}
+
+.container{
+    flex: 2;
+}
+.desc-container{
+    flex: 2;
+    height: 100%;
+    text-align: justify;
+    padding: 1.2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.desc-container>p>h2{
+    letter-spacing: 2px;
+    padding-bottom: 5px;
+}
+.desc-para{
+    line-height:1.5rem;
+    margin-top: 1rem;
+    text-align: justify;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: none;
+}
+.desc-para:hover{
+    scale: 1.05;
+}
+
+
+.p-cta-btn {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
+  box-sizing: border-box;
+  color: #121212;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1;
+  outline: none;
+  padding: 10px;
+  width: max-content;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s,-webkit-box-shadow .2s;
+  white-space: nowrap;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.p-cta-btn:hover {
+  box-shadow: #aaddd5 0 0 0 3px, transparent 0 0 0 0;
+}
+
+.project-tools,.project-cta{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 15px;
+    justify-content: center;
+    gap: 1rem;
+}
+.tools-thumbnail{
+    width: 30px;
+    height: 30px;
+    background: transparent;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .projects-container{
+        gap: 3rem;
+        
+    }
+
+}
+
+@media screen and (max-width:767px){
+    .projects-container{
+        grid-template-columns: 100%;
+        margin: 1rem;
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+
+    .container, .desc-container{
+        flex: 1;
+        padding: 0.5rem;
+    }
+}
