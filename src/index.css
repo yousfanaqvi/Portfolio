@@ -249,13 +249,14 @@ nav{
 
 footer{
   background: linear-gradient(90deg, #EAEAEA 0%, #e26ae2 70%); 
-  height: 100px;
+  height: 70px;
   text-align: center;
   padding: 1rem;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   color: #000;
   display: flex;
+  flex-direction: column;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 
